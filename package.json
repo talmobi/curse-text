@@ -18,8 +18,8 @@
     "text"
   ],
   "author": "talmobi <talmo.christian@gmail.com>",
-  "license": "UNLICENSED",
-  "private": true,
+  "license": "MIT",
+  "private": false,
   "repository": {
     "type": "git",
     "url": "https://github.com/talmobi/curse-text"
