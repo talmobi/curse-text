@@ -4,7 +4,7 @@ const curse = require( './main.js' )
 
 const args = process.argv.slice( 2 )
 
-let _intensity = 0.5
+let _intensity = undefined
 let _seed = undefined
 
 if ( args[ 0 ] ) {
