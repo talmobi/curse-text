@@ -3,6 +3,9 @@
   "version": "0.0.0",
   "description": "curse text like this -> ť͈̓̆h̏̔̐̑ì̭ͯ͞s̈́̄̑͋",
   "main": "main.js",
+  "bin": {
+    "curse-text": "./cli.js"
+  },
   "scripts": {
     "test": "node test/test.js"
   },
