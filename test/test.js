@@ -18,7 +18,7 @@ test( 'api: basic zalgo', function ( t ) {
   t.equal( curse( 'hello world' ), 'h̵̛̙̠̜̥̓ͯ̓̈́e̢͙̰̼ͥ́́̏̏͢l̳̤̋̍ͦ̆͐ͮͦ͡l̴͙͗̿͊ͣ̃͂̊ͅo̷͈̞̗̺̙͖͂̈ͮ ̺̞̀͗́̇̓ͦ͆͟w͎̰̖͚̱ͣͫ̑̎̔ǫ̨̹̬͎́̈́́̓̐r̷̭͚̻̺̻̉͊̌̕ļ̩͙̠̮̀̍ͬ̊̓ḑ͇̌͊ͭ̆̇̏ͩ͟' )
 } )
 
-test.only( 'cli: basic zalgo', async function ( t ) {
+test( 'cli: basic zalgo', async function ( t ) {
   t.plan( 1 )
 
   const zalgo = curse( 'hello world' )
