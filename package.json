@@ -10,7 +10,12 @@
     "test": "node test/test.js"
   },
   "keywords": [
-    "curse-text"
+    "zalgo",
+    "unzalgo",
+    "demon-text",
+    "demonic",
+    "cursed",
+    "text"
   ],
   "author": "talmobi <talmo.christian@gmail.com>",
   "license": "UNLICENSED",
