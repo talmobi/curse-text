@@ -25,8 +25,27 @@ if ( args[ 0 ] ) {
 let buffer = ''
 process.stdin.on( 'data', function ( chunk ) {
   buffer += chunk
+  const lines = buffer.split( '\n' )
+  buffer = lines.pop()
+
+  handleInput( lines )
 } )
 
 process.stdin.on( 'end', function () {
-  process.stdout.write( curse( buffer ) )
+  handleInput( buffer )
 } )
+
+function handleInput ( lines ) {
+  let buffer
+  if ( typeof lines === 'string' ) {
+    buffer = lines
+  } else {
+    // assume array
+    buffer = lines.join( '\n' )
+  }
+
+  const opts = {
+    intensity: _intensity
+  }
+  process.stdout.write( curse( buffer, opts ) )
+}
